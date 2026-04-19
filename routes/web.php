@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Eshop
+Route::get('/', [PageController::class, 'home']);
+Route::get('/product-detail', [PageController::class, 'productDetail']);

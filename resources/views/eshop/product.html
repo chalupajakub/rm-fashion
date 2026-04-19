@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Loose Fit Hoodie — Nextgen</title>
+<meta name="description" content="Premium organic cotton loose fit hoodie by Nextgen. Free shipping over $75."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --secondary: #f0ebe3;
+    --border: #e5e0d6;
+    --card: #ffffff;
+    --accent: #c9b99a;
+  }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--fg); -webkit-font-smoothing: antialiased; }
+  .font-display { font-family: 'Instrument Serif', serif; font-weight: 400; letter-spacing: -0.01em; }
+  .text-muted { color: var(--muted); }
+  .bg-secondary { background: var(--secondary); }
+  .bg-card { background: var(--card); }
+  .border-default { border-color: var(--border); }
+  .bg-accent { background: var(--accent); }
+  .bg-fg { background: var(--fg); }
+  .text-bg { color: var(--bg); }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .plus-icon { display: none; }
+  details:not([open]) .minus-icon { display: none; }
+  .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+  details[open] .accordion-content { max-height: 500px; padding-bottom: 1.25rem; }
+  .size-btn.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .thumb.active { outline: 2px solid var(--fg); outline-offset: 2px; opacity: 1; }
+  .thumb { opacity: 0.6; transition: opacity 0.2s; }
+  .thumb:hover { opacity: 1; }
+  .fade-img { animation: fade 0.4s ease; }
+  @keyframes fade { from { opacity: 0; transform: scale(1.02); } to { opacity: 1; transform: scale(1); } }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="border-b border-default sticky top-0 z-40 bg-[var(--bg)]/90 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+    <div class="flex items-center justify-between h-16">
+      <button class="p-2 -ml-2 rounded-full hover:bg-secondary transition-colors" aria-label="Menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+      <a href="#" class="font-display text-2xl">Nextgen<span style="color:var(--accent)">.</span></a>
+      <div class="flex items-center gap-1">
+        <a href="#" class="hidden sm:inline-flex px-3 py-2 text-sm hover:bg-secondary rounded-full">About</a>
+        <a href="#" class="hidden sm:inline-flex px-3 py-2 text-sm hover:bg-secondary rounded-full">FAQs</a>
+        <button class="relative p-2 rounded-full hover:bg-secondary transition-colors ml-1" aria-label="Cart">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          <span class="absolute -top-0.5 -right-0.5 h-4 w-4 rounded-full bg-fg text-bg text-[10px] font-medium flex items-center justify-center">2</span>
+        </button>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 sm:gap-6 py-3 overflow-x-auto">
+      <nav class="flex items-center gap-1 shrink-0">
+        <a href="#" class="px-3 py-1.5 text-sm rounded-full bg-fg text-bg">Men</a>
+        <a href="#" class="px-3 py-1.5 text-sm rounded-full hover:bg-secondary">Women</a>
+        <a href="#" class="px-3 py-1.5 text-sm rounded-full hover:bg-secondary">Children</a>
+        <a href="#" class="px-3 py-1.5 text-sm rounded-full hover:bg-secondary">Brands</a>
+      </nav>
+      <div class="flex-1 hidden md:flex items-center gap-2 max-w-md ml-auto">
+        <div class="relative flex-1">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted"></i>
+          <input type="search" placeholder="Search products..." class="w-full h-9 pl-9 pr-3 text-sm rounded-full bg-secondary border-0 focus:ring-2 focus:ring-[var(--fg)]/10 outline-none"/>
+        </div>
+        <select class="h-9 px-3 text-sm rounded-full bg-secondary border-0 outline-none">
+          <option>Categories</option><option>Hoodies</option><option>Tees</option>
+        </select>
+        <select class="h-9 px-3 text-sm rounded-full bg-secondary border-0 outline-none">
+          <option>New Product</option><option>Best Sellers</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-8 lg:py-12">
+
+  <!-- BREADCRUMB -->
+  <nav class="text-xs text-muted mb-6">
+    <a href="#" class="hover:text-[var(--fg)]">Men</a>
+    <span class="mx-2">/</span>
+    <a href="#" class="hover:text-[var(--fg)]">Hoodies</a>
+    <span class="mx-2">/</span>
+    <span class="text-[var(--fg)]">Loose Fit Hoodie</span>
+  </nav>
+
+  <!-- PRODUCT SECTION -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+
+    <!-- GALLERY -->
+    <div class="flex flex-col gap-4">
+      <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-secondary">
+        <img id="mainImage" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1024&q=80" alt="Loose Fit Hoodie" class="absolute inset-0 w-full h-full object-cover fade-img"/>
+        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[var(--bg)]/90 backdrop-blur text-xs font-medium">New Arrival</div>
+      </div>
+      <div class="grid grid-cols-4 gap-3" id="thumbs">
+        <button class="thumb active aspect-square rounded-2xl overflow-hidden bg-secondary" data-src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1024&q=80">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&q=80" class="w-full h-full object-cover" alt="thumb 1"/>
+        </button>
+        <button class="thumb aspect-square rounded-2xl overflow-hidden bg-secondary" data-src="https://images.unsplash.com/photo-1542327897-d73f4005b533?w=1024&q=80">
+          <img src="https://images.unsplash.com/photo-1542327897-d73f4005b533?w=400&q=80" class="w-full h-full object-cover" alt="thumb 2"/>
+        </button>
+        <button class="thumb aspect-square rounded-2xl overflow-hidden bg-secondary" data-src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=1024&q=80">
+          <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&q=80" class="w-full h-full object-cover" alt="thumb 3"/>
+        </button>
+        <button class="thumb aspect-square rounded-2xl overflow-hidden bg-secondary" data-src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1024&q=80">
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400&q=80" class="w-full h-full object-cover" alt="thumb 4"/>
+        </button>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="flex flex-col">
+      <span class="text-xs uppercase tracking-[0.2em] text-muted">Man Fashion</span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mt-3">Loose Fit <em class="italic">Hoodie</em></h1>
+
+      <div class="flex items-baseline gap-3 mt-6">
+        <span class="text-3xl font-medium">$89.00</span>
+        <span class="text-base text-muted line-through">$120.00</span>
+        <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background: rgba(201,185,154,0.3)">-25%</span>
+      </div>
+
+      <div class="mt-6 flex items-center gap-3 p-4 rounded-2xl bg-secondary">
+        <div class="h-10 w-10 rounded-full bg-card flex items-center justify-center">
+          <i data-lucide="truck" class="w-5 h-5"></i>
+        </div>
+        <div class="flex-1">
+          <p class="text-sm font-medium">Free delivery</p>
+          <p class="text-xs text-muted">Order in 4h 32m for delivery by Thursday</p>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-sm font-medium">Select size</span>
+          <button class="text-xs text-muted underline underline-offset-4 hover:text-[var(--fg)]">Size guide</button>
+        </div>
+        <div class="grid grid-cols-5 gap-2" id="sizes">
+          <button class="size-btn h-12 rounded-xl border border-default bg-card text-sm font-medium hover:border-[var(--fg)]/40 transition-all">S</button>
+          <button class="size-btn h-12 rounded-xl border border-default bg-card text-sm font-medium hover:border-[var(--fg)]/40 transition-all">M</button>
+          <button class="size-btn active h-12 rounded-xl border border-default bg-card text-sm font-medium hover:border-[var(--fg)]/40 transition-all">L</button>
+          <button class="size-btn h-12 rounded-xl border border-default bg-card text-sm font-medium hover:border-[var(--fg)]/40 transition-all">XL</button>
+          <button class="size-btn h-12 rounded-xl border border-default bg-card text-sm font-medium hover:border-[var(--fg)]/40 transition-all">XXL</button>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center gap-3">
+        <button class="flex-1 h-14 rounded-full bg-fg text-bg font-medium inline-flex items-center justify-center gap-2 hover:opacity-90 transition group">
+          <i data-lucide="shopping-bag" class="w-4 h-4 transition-transform group-hover:-translate-y-0.5"></i>
+          Add to Cart
+        </button>
+        <button id="wishBtn" class="h-14 w-14 rounded-full border border-default bg-card flex items-center justify-center hover:border-[var(--fg)]/40 transition-all" aria-label="Wishlist">
+          <i data-lucide="heart" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- ACCORDION -->
+      <div class="mt-10 border-y border-default divide-y divide-[var(--border)]">
+        <details open>
+          <summary class="flex items-center gap-4 py-5">
+            <i data-lucide="shirt" class="w-5 h-5 text-muted"></i>
+            <span class="flex-1 font-medium">Description & Fit</span>
+            <i data-lucide="plus" class="plus-icon w-4 h-4"></i>
+            <i data-lucide="minus" class="minus-icon w-4 h-4"></i>
+          </summary>
+          <div class="accordion-content pl-9 pr-4 text-sm text-muted leading-relaxed">
+            Crafted from organic heavyweight cotton, this loose fit hoodie features a relaxed silhouette, dropped shoulders, and a kangaroo pocket. Pre-washed for softness with ribbed cuffs and hem. Model is 6'1" and wears size L.
+          </div>
+        </details>
+        <details>
+          <summary class="flex items-center gap-4 py-5">
+            <i data-lucide="package" class="w-5 h-5 text-muted"></i>
+            <span class="flex-1 font-medium">Shipping & Returns</span>
+            <i data-lucide="plus" class="plus-icon w-4 h-4"></i>
+            <i data-lucide="minus" class="minus-icon w-4 h-4"></i>
+          </summary>
+          <div class="accordion-content pl-9 pr-4 text-sm text-muted leading-relaxed">
+            Free standard shipping on orders over $75. Express delivery available at checkout. Free returns within 30 days — items must be unworn with original tags.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <section class="mt-16">
+    <h2 class="font-display text-3xl sm:text-4xl">Ratings & Reviews</h2>
+    <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-baseline gap-2">
+          <span class="font-display text-6xl">4.5</span>
+          <span class="text-muted">/ 5</span>
+        </div>
+        <div class="flex gap-0.5 mt-2 text-[var(--fg)]">
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          <i data-lucide="star" class="w-4 h-4 text-muted"></i>
+        </div>
+        <p class="text-sm text-muted mt-2">Based on 1,284 reviews</p>
+        <div class="mt-6 space-y-2">
+          <!-- breakdown -->
+          <script>/* placeholder */</script>
+        </div>
+        <div class="mt-6 space-y-2" id="breakdown"></div>
+      </div>
+
+      <div class="lg:col-span-2 rounded-3xl bg-card border border-default p-6 sm:p-8">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 rounded-full flex items-center justify-center font-medium" style="background: rgba(201,185,154,0.4)">JM</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <p class="font-medium">James Morrison</p>
+                <p class="text-xs text-muted">Verified buyer · 2 weeks ago</p>
+              </div>
+              <div class="flex gap-0.5">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+            </div>
+            <h3 class="font-medium mt-4">Exactly what I was looking for</h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              The fabric quality is exceptional — heavy enough to feel premium but still breathable. The oversized cut is perfectly tailored, not sloppy. I went up one size for the relaxed look and it's spot on. Already ordered another in black.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section class="mt-20">
+    <div class="flex items-end justify-between mb-8">
+      <h2 class="font-display text-3xl sm:text-4xl">You might also like</h2>
+      <a href="#" class="text-sm text-muted hover:text-[var(--fg)] underline underline-offset-4">View all</a>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6" id="recs"></div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="mt-24 border-t border-default" style="background: rgba(240,235,227,0.4)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
+    <div class="grid grid-cols-2 lg:grid-cols-6 gap-10">
+      <div class="col-span-2">
+        <a href="/" class="font-display text-3xl">Nextgen<span style="color:var(--accent)">.</span></a>
+        <p class="text-sm text-muted mt-4 max-w-xs leading-relaxed">Modern essentials, considered design and timeless quality — crafted for the next generation.</p>
+        <div class="flex gap-2 mt-6">
+          <a href="#" class="h-9 w-9 rounded-full bg-card border border-default flex items-center justify-center hover:border-[var(--fg)]/40"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="h-9 w-9 rounded-full bg-card border border-default flex items-center justify-center hover:border-[var(--fg)]/40"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+          <a href="#" class="h-9 w-9 rounded-full bg-card border border-default flex items-center justify-center hover:border-[var(--fg)]/40"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" class="h-9 w-9 rounded-full bg-card border border-default flex items-center justify-center hover:border-[var(--fg)]/40"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium mb-4">Company</h4>
+        <ul class="space-y-2.5 text-sm text-muted"><li><a href="#" class="hover:text-[var(--fg)]">About</a></li><li><a href="#" class="hover:text-[var(--fg)]">Careers</a></li><li><a href="#" class="hover:text-[var(--fg)]">Press</a></li><li><a href="#" class="hover:text-[var(--fg)]">Sustainability</a></li></ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium mb-4">Help</h4>
+        <ul class="space-y-2.5 text-sm text-muted"><li><a href="#" class="hover:text-[var(--fg)]">Contact</a></li><li><a href="#" class="hover:text-[var(--fg)]">Shipping</a></li><li><a href="#" class="hover:text-[var(--fg)]">Returns</a></li><li><a href="#" class="hover:text-[var(--fg)]">Order Status</a></li></ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium mb-4">FAQ</h4>
+        <ul class="space-y-2.5 text-sm text-muted"><li><a href="#" class="hover:text-[var(--fg)]">Account</a></li><li><a href="#" class="hover:text-[var(--fg)]">Sizing</a></li><li><a href="#" class="hover:text-[var(--fg)]">Payments</a></li><li><a href="#" class="hover:text-[var(--fg)]">Gift Cards</a></li></ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium mb-4">Resources</h4>
+        <ul class="space-y-2.5 text-sm text-muted"><li><a href="#" class="hover:text-[var(--fg)]">Blog</a></li><li><a href="#" class="hover:text-[var(--fg)]">Lookbook</a></li><li><a href="#" class="hover:text-[var(--fg)]">Style Guide</a></li><li><a href="#" class="hover:text-[var(--fg)]">Affiliates</a></li></ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-default flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-muted">© 2026 RM Fashion. All rights reserved.</p>
+      <div class="flex items-center gap-2">
+        <span class="px-2.5 py-1 rounded-md bg-card border border-default text-[10px] font-medium text-muted">VISA</span>
+        <span class="px-2.5 py-1 rounded-md bg-card border border-default text-[10px] font-medium text-muted">MC</span>
+        <span class="px-2.5 py-1 rounded-md bg-card border border-default text-[10px] font-medium text-muted">AMEX</span>
+        <span class="px-2.5 py-1 rounded-md bg-card border border-default text-[10px] font-medium text-muted">PAYPAL</span>
+        <span class="px-2.5 py-1 rounded-md bg-card border border-default text-[10px] font-medium text-muted">APPLE</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Build breakdown bars
+  const breakdown = [{s:5,p:72},{s:4,p:18},{s:3,p:6},{s:2,p:3},{s:1,p:1}];
+  document.getElementById('breakdown').innerHTML = breakdown.map(b => `
+    <div class="flex items-center gap-3 text-xs">
+      <span class="w-3 text-[var(--muted)]">${b.s}</span>
+      <svg class="h-3 w-3 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="flex-1 h-1.5 rounded-full bg-secondary overflow-hidden"><div class="h-full bg-fg rounded-full" style="width:${b.p}%"></div></div>
+      <span class="w-8 text-right text-[var(--muted)]">${b.p}%</span>
+    </div>
+  `).join('');
+
+  // Recommendations
+  const recs = [
+    { img:'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80', name:'Classic Bomber Jacket', price:145, rating:4.7, discount:null },
+    { img:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80', name:'Essential Cotton Tee', price:32, rating:4.8, discount:20 },
+    { img:'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&q=80', name:'Wide Leg Trousers', price:98, rating:4.6, discount:null },
+    { img:'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80', name:'Cable Knit Sweater', price:124, rating:4.9, discount:15 },
+  ];
+  document.getElementById('recs').innerHTML = recs.map(p => `
+    <article class="group">
+      <div class="relative aspect-[4/5] overflow-hidden rounded-2xl bg-secondary">
+        <img src="${p.img}" alt="${p.name}" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        ${p.discount ? `<span class="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-fg text-bg text-[10px] font-medium">-${p.discount}%</span>` : ''}
+        <button class="absolute top-3 right-3 h-8 w-8 rounded-full bg-[var(--bg)]/90 backdrop-blur flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+      </div>
+      <div class="mt-3 px-1">
+        <h3 class="text-sm font-medium leading-snug">${p.name}</h3>
+        <div class="flex items-center justify-between mt-1.5">
+          <div class="flex items-center gap-1 text-xs text-muted">
+            <svg class="h-3 w-3 fill-current text-[var(--fg)]" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            ${p.rating}
+          </div>
+          <span class="text-sm font-medium">$${p.price}</span>
+        </div>
+      </div>
+    </article>
+  `).join('');
+
+  // Size selector
+  document.querySelectorAll('.size-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // Thumbnail switcher
+  document.querySelectorAll('.thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+      const img = document.getElementById('mainImage');
+      img.src = thumb.dataset.src;
+      img.classList.remove('fade-img'); void img.offsetWidth; img.classList.add('fade-img');
+    });
+  });
+
+  // Wishlist toggle
+  const wishBtn = document.getElementById('wishBtn');
+  wishBtn.addEventListener('click', () => {
+    const icon = wishBtn.querySelector('svg, i');
+    wishBtn.classList.toggle('bg-secondary');
+    const heart = wishBtn.querySelector('svg');
+    if (heart) heart.setAttribute('fill', heart.getAttribute('fill') === 'currentColor' ? 'none' : 'currentColor');
+  });
+
+  // Init icons
+  lucide.createIcons();
+</script>
+</body>
+</html>
